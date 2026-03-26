@@ -150,3 +150,30 @@ html {
   background: rgba(37, 99, 235, 0.3);
   color: inherit;
 }
+
+/* Coastal wave pattern background for light sections */
+.coastal-waves {
+  background-image: url("data:image/svg+xml,%3Csvg width='1440' height='60' viewBox='0 0 1440 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 30C240 10 480 50 720 30C960 10 1200 50 1440 30' stroke='%232563eb' stroke-width='1' opacity='0.04'/%3E%3Cpath d='M0 40C200 20 440 55 720 35C1000 15 1240 55 1440 40' stroke='%2338bdf8' stroke-width='0.8' opacity='0.03'/%3E%3Cpath d='M0 50C280 30 500 60 720 42C940 24 1200 58 1440 48' stroke='%234f46e5' stroke-width='0.6' opacity='0.025'/%3E%3C/svg%3E");
+  background-repeat: repeat-y;
+  background-size: 100% 80px;
+}
+
+/* Tide line — animated horizontal separator */
+.tide-line {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-seafoam-400) 20%,
+    var(--color-brand-blue) 50%,
+    var(--color-seafoam-400) 80%,
+    transparent 100%
+  );
+  opacity: 0.2;
+}
+
+/* Ripple texture for dark sections */
+.ocean-ripple {
+  background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 100 Q50 90 100 100 Q150 110 200 100' fill='none' stroke='%2338bdf8' stroke-width='0.5' opacity='0.06'/%3E%3Cpath d='M0 130 Q50 120 100 130 Q150 140 200 130' fill='none' stroke='%232563eb' stroke-width='0.4' opacity='0.04'/%3E%3Cpath d='M0 70 Q50 60 100 70 Q150 80 200 70' fill='none' stroke='%2360a5fa' stroke-width='0.3' opacity='0.03'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}

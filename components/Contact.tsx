@@ -39,6 +39,7 @@ export default function Contact() {
       <section id="contact" className="relative bg-ocean-900 py-24 lg:py-32 overflow-hidden noise-overlay">
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-b from-ocean-900 via-ocean-950 to-ocean-950" />
+        <div className="absolute inset-0 ocean-ripple" />
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-brand-violet/5 rounded-full blur-[200px]" />
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-brand-blue/5 rounded-full blur-[200px]" />
 

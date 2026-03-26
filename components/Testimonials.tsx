@@ -32,8 +32,8 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section id="testimonials" className="relative bg-white py-24 lg:py-32 overflow-hidden">
-      {/* Top border */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-sand-200 to-transparent" />
+      {/* Tide line top border */}
+      <div className="absolute top-0 left-0 right-0 tide-line" />
 
       {/* Decorative quote marks */}
       <div className="absolute top-20 left-10 font-serif text-[200px] leading-none text-brand-blue/[0.03] select-none">

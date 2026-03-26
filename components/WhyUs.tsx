@@ -31,7 +31,7 @@ const props = [
 
 export default function WhyUs() {
   return (
-    <section className="relative bg-sand-50 py-24 lg:py-32 overflow-hidden">
+    <section className="relative bg-sand-50 py-24 lg:py-32 overflow-hidden coastal-waves">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-16 lg:mb-20">

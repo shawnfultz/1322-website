@@ -4,7 +4,7 @@ import AnimateOnScroll from "./AnimateOnScroll";
 
 export default function About() {
   return (
-    <section id="about" className="relative bg-sand-50 py-24 lg:py-32 overflow-hidden">
+    <section id="about" className="relative bg-sand-50 py-24 lg:py-32 overflow-hidden coastal-waves">
       {/* Decorative wave watermark */}
       <svg
         className="absolute top-20 right-0 w-[600px] opacity-[0.04]"

@@ -41,6 +41,7 @@ export default function Process() {
       <section id="process" className="relative bg-ocean-900 py-24 lg:py-32 overflow-hidden noise-overlay">
         {/* Background elements */}
         <div className="absolute inset-0 bg-gradient-to-b from-ocean-900 via-ocean-950 to-ocean-900" />
+        <div className="absolute inset-0 ocean-ripple" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-brand-blue/5 rounded-full blur-[200px]" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">

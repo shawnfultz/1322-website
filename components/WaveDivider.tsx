@@ -17,19 +17,27 @@ export default function WaveDivider({
       style={{ backgroundColor: topColor }}
     >
       <svg
-        viewBox="0 0 1440 120"
+        viewBox="0 0 1440 140"
         preserveAspectRatio="none"
-        className="relative block w-full h-[60px] md:h-[80px] lg:h-[120px]"
+        className="relative block w-full h-[70px] md:h-[100px] lg:h-[140px]"
         xmlns="http://www.w3.org/2000/svg"
       >
+        {/* Back wave — subtle seafoam hint */}
         <path
-          d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z"
+          d="M0,90 C180,60 360,110 540,80 C720,50 900,100 1080,70 C1260,40 1380,90 1440,80 L1440,140 L0,140 Z"
           fill={bottomColor}
+          opacity="0.3"
         />
+        {/* Middle wave */}
         <path
-          d="M0,80 C200,40 400,100 720,70 C1040,40 1240,90 1440,70 L1440,120 L0,120 Z"
+          d="M0,70 C240,110 480,40 720,70 C960,100 1200,30 1440,70 L1440,140 L0,140 Z"
           fill={bottomColor}
-          opacity="0.5"
+          opacity="0.6"
+        />
+        {/* Front wave — main shape */}
+        <path
+          d="M0,85 C200,50 400,105 720,75 C1040,45 1240,100 1440,80 L1440,140 L0,140 Z"
+          fill={bottomColor}
         />
       </svg>
     </div>

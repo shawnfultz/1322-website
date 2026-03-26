@@ -69,8 +69,11 @@ const services = [
 export default function Services() {
   return (
     <section id="services" className="relative bg-white py-24 lg:py-32 overflow-hidden">
-      {/* Subtle top border */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-sand-200 to-transparent" />
+      {/* Tide line top border */}
+      <div className="absolute top-0 left-0 right-0 tide-line" />
+
+      {/* Subtle coastal wave pattern background */}
+      <div className="absolute inset-0 coastal-waves opacity-50" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section header */}
