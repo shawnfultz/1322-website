@@ -4,62 +4,57 @@ import AnimateOnScroll from "./AnimateOnScroll";
 
 const services = [
   {
-    title: "AI Solutions",
+    title: "Website Modernization",
     description:
-      "Custom AI systems that learn your business. From intelligent document processing to predictive analytics, we build AI that delivers real ROI — not hype.",
+      "Your site is outdated and it's costing you jobs. We rebuild it with modern tech, fast load times, and a design that actually converts visitors into customers.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <circle cx="16" cy="16" r="4" stroke="currentColor" strokeWidth="1.5" />
-        <circle cx="16" cy="4" r="2" fill="currentColor" opacity="0.6" />
-        <circle cx="28" cy="16" r="2" fill="currentColor" opacity="0.6" />
-        <circle cx="16" cy="28" r="2" fill="currentColor" opacity="0.6" />
-        <circle cx="4" cy="16" r="2" fill="currentColor" opacity="0.6" />
-        <line x1="16" y1="6" x2="16" y2="12" stroke="currentColor" strokeWidth="1" opacity="0.4" />
-        <line x1="20" y1="16" x2="26" y2="16" stroke="currentColor" strokeWidth="1" opacity="0.4" />
-        <line x1="16" y1="20" x2="16" y2="26" stroke="currentColor" strokeWidth="1" opacity="0.4" />
-        <line x1="12" y1="16" x2="6" y2="16" stroke="currentColor" strokeWidth="1" opacity="0.4" />
+        <rect x="3" y="6" width="26" height="18" rx="3" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M3 12h26" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="7" cy="9" r="1" fill="currentColor" opacity="0.5" />
+        <circle cx="10.5" cy="9" r="1" fill="currentColor" opacity="0.5" />
+        <circle cx="14" cy="9" r="1" fill="currentColor" opacity="0.5" />
+        <path d="M8 17h6M8 20h10M8 23h4" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.5" />
+        <rect x="20" y="16" width="6" height="8" rx="1" stroke="currentColor" strokeWidth="1" opacity="0.5" />
       </svg>
     ),
     gradient: "from-brand-blue to-seafoam-400",
   },
   {
-    title: "Custom Software",
+    title: "Marine & Maritime Web",
     description:
-      "Web, mobile, and distributed systems built for scale. We architect solutions with modern frameworks and clean code that your team can maintain and grow.",
+      "Marinas, boat dealers, charter companies, marine services — we know the industry and build sites that speak to boaters. Clean, fast, and built for the water.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <rect x="3" y="6" width="26" height="18" rx="3" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M12 14l-3 3 3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M20 14l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <line x1="17" y1="12" x2="15" y2="22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-        <line x1="3" y1="27" x2="29" y2="27" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M4 24c4-3 8 1 12-2s8 1 12-2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M4 28c4-3 8 1 12-2s8 1 12-2" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.3" />
+        <path d="M16 6v14M10 20l6-14 6 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <line x1="12" y1="16" x2="20" y2="16" stroke="currentColor" strokeWidth="1" />
       </svg>
     ),
     gradient: "from-brand-indigo to-brand-blue",
   },
   {
-    title: "Cloud & Infrastructure",
+    title: "Trade Business Websites",
     description:
-      "Kubernetes, AWS, serverless — we design cloud architectures that are resilient, cost-efficient, and ready to scale when you are. DevOps done right.",
+      "HVAC, plumbing, electrical, roofing, landscaping — if you work with your hands, we make sure your website works just as hard. Local SEO included.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path d="M8 24a6 6 0 01-.5-12A8 8 0 0124 14a5 5 0 01-1 10H8z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <path d="M13 18l3-3 3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <line x1="16" y1="15" x2="16" y2="22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M20 8l-2-2h-4l-2 2H6v4h20V8h-6z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+        <rect x="6" y="12" width="20" height="14" rx="2" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M16 17v4M14 19h4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
     gradient: "from-brand-violet to-brand-indigo",
   },
   {
-    title: "Smart Automation",
+    title: "Growth & Custom Software",
     description:
-      "Eliminate repetitive work with intelligent workflows. We connect your tools, automate your processes, and give your team back their time.",
+      "Once your site is dialed in, we can go further — booking systems, customer portals, automation, AI tools. We grow with your business.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path d="M16 4v4M16 24v4M4 16h4M24 16h4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-        <circle cx="16" cy="16" r="6" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M19 13l-4.5 4.5L12 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M7.8 7.8l2.8 2.8M21.4 21.4l2.8 2.8M7.8 24.2l2.8-2.8M21.4 10.6l2.8-2.8" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.4" />
+        <path d="M6 26V14M12 26V10M18 26V16M24 26V6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+        <path d="M4 8l8-2 8 4 8-4" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" opacity="0.3" />
       </svg>
     ),
     gradient: "from-seafoam-400 to-brand-violet",
@@ -85,14 +80,14 @@ export default function Services() {
           </AnimateOnScroll>
           <AnimateOnScroll delay={0.1}>
             <h2 className="font-display font-bold text-4xl md:text-5xl text-ocean-900 leading-tight mb-6">
-              Solutions that{" "}
-              <span className="font-serif italic text-brand-indigo">move the needle</span>
+              Websites that{" "}
+              <span className="font-serif italic text-brand-indigo">work for you</span>
             </h2>
           </AnimateOnScroll>
           <AnimateOnScroll delay={0.2}>
             <p className="font-body text-lg text-ocean-700/60 leading-relaxed">
-              From concept to deployment, we build technology that gives your business
-              a genuine competitive edge.
+              No matter your industry, we take outdated sites and turn them into
+              modern, fast, mobile-friendly tools that bring in business.
             </p>
           </AnimateOnScroll>
         </div>

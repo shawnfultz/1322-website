@@ -31,7 +31,7 @@ export default function Hero() {
           >
             <span className="w-2 h-2 rounded-full bg-station-500 animate-pulse-slow" />
             <span className="text-sm font-body text-white/70">
-              Charleston, SC &mdash; Software & AI Solutions
+              Charleston, SC &mdash; Web Modernization for Trades & Marine
             </span>
           </motion.div>
 
@@ -42,11 +42,12 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="font-display font-extrabold text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.95] tracking-tight mb-6"
           >
-            Custom Software.
+            Your Business
             <br />
-            <span className="text-gradient-brand">Smarter AI.</span>
+            Deserves a{" "}
+            <span className="text-gradient-brand">Better</span>
             <br />
-            Real Results.
+            Website.
           </motion.h1>
 
           {/* Subheadline */}
@@ -56,9 +57,9 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.5 }}
             className="text-lg md:text-xl font-body text-white/60 max-w-xl mb-10 leading-relaxed"
           >
-            Over a decade of experience across mortgage, fintech, healthcare,
-            and more. From polished marketing sites to complex enterprise
-            systems &mdash; we deliver fast and get it right.
+            We modernize outdated websites for trade businesses and marine
+            companies. Fast turnaround, modern design, built to actually
+            bring you customers.
           </motion.p>
 
           {/* CTAs */}

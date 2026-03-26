@@ -2,15 +2,15 @@ import Logo from "./Logo";
 
 const footerLinks = {
   Services: [
-    { label: "AI Solutions", href: "#services" },
-    { label: "Custom Software", href: "#services" },
-    { label: "Cloud & Infrastructure", href: "#services" },
-    { label: "Smart Automation", href: "#services" },
+    { label: "Website Modernization", href: "#services" },
+    { label: "Marine & Maritime Web", href: "#services" },
+    { label: "Trade Business Websites", href: "#services" },
+    { label: "Growth & Custom Software", href: "#services" },
   ],
   Company: [
     { label: "About", href: "#about" },
     { label: "Process", href: "#process" },
-    { label: "Testimonials", href: "#testimonials" },
+    { label: "Why Us", href: "#about" },
     { label: "Contact", href: "#contact" },
   ],
 };
@@ -29,8 +29,8 @@ export default function Footer() {
               </span>
             </a>
             <p className="font-body text-white/30 text-sm leading-relaxed max-w-sm mb-6">
-              Custom software and AI solutions crafted with lowcountry care.
-              Based in Charleston, SC — serving innovators nationwide.
+              Modern websites for trade businesses and marine companies.
+              Based in Charleston, SC — fast turnaround, real results.
             </p>
             {/* Social links */}
             <div className="flex gap-3">

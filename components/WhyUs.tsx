@@ -4,27 +4,27 @@ import AnimateOnScroll from "./AnimateOnScroll";
 
 const props = [
   {
-    stat: "10x",
-    label: "ROI on AI Projects",
-    description: "Our clients see measurable returns within the first quarter of deployment.",
-    icon: "M13 7h8m0 0v8m0-8l-8 8-4-4-6 6",
-  },
-  {
-    stat: "< 48hr",
-    label: "Response Time",
-    description: "Critical issues get addressed fast. Non-critical requests within a business day.",
-    icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
+    stat: "2-4",
+    label: "Weeks to Launch",
+    description: "No six-month timelines. We move fast so you start seeing results sooner, not later.",
+    icon: "M13 10V3L4 14h7v7l9-11h-7z",
   },
   {
     stat: "100%",
-    label: "U.S. Based Team",
-    description: "Every engineer on your project is local. Same timezone, same standards, no middlemen.",
+    label: "Mobile Friendly",
+    description: "Over 60% of your customers are on their phone. Every site we build looks great on any device.",
+    icon: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
+  },
+  {
+    stat: "Local",
+    label: "Charleston Based",
+    description: "We're not overseas. We're right here in Charleston. Same timezone, real conversations, no runaround.",
     icon: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z",
   },
   {
-    stat: "0",
-    label: "Vendor Lock-in",
-    description: "You own your code, your data, and your infrastructure. Full transparency, always.",
+    stat: "You",
+    label: "Own Everything",
+    description: "Your site, your code, your domain. No proprietary lock-in, no monthly hostage fees. It's yours.",
     icon: "M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z",
   },
 ];
@@ -48,8 +48,8 @@ export default function WhyUs() {
           </AnimateOnScroll>
           <AnimateOnScroll delay={0.2}>
             <p className="font-body text-lg text-ocean-700/60 leading-relaxed">
-              We&apos;re not a body shop or an outsourcing mill. We&apos;re a small, focused team
-              that treats every project like our reputation depends on it — because it does.
+              You don&apos;t need an agency with 50 people and a 6-figure proposal.
+              You need a team that gets it done right, gets it done fast, and doesn&apos;t disappear.
             </p>
           </AnimateOnScroll>
         </div>

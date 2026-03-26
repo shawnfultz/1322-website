@@ -33,27 +33,26 @@ export default function About() {
 
             <AnimateOnScroll delay={0.1}>
               <h2 className="font-display font-bold text-4xl md:text-5xl text-ocean-900 leading-tight mb-6">
-                Born on the Coast.
+                Your website is your
                 <br />
-                <span className="font-serif italic text-brand-indigo">Built for the future.</span>
+                <span className="font-serif italic text-brand-indigo">first impression.</span>
               </h2>
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={0.2}>
               <p className="font-body text-lg text-ocean-700/70 leading-relaxed mb-6">
-                With over 10 years of deep experience in the mortgage and financial
-                services industry, 1322 Customs has expanded into a full-service
-                software and AI studio serving healthcare, logistics, marine,
-                real estate, and beyond.
+                Most trade and marine businesses are running on websites built
+                five or ten years ago &mdash; slow, outdated, and not bringing in
+                the work they should. We fix that. Fast.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={0.3}>
               <p className="font-body text-lg text-ocean-700/70 leading-relaxed mb-8">
-                Whether you need a polished front-end website or a complex distributed
-                system, we move fast without cutting corners. Our Charleston-based team
-                brings hands-on industry knowledge to every project &mdash; we don&apos;t
-                just write code, we understand the business behind it.
+                Based in Charleston, SC with over a decade of software experience,
+                we specialize in taking what you have and making it modern, mobile-friendly,
+                and built to convert. No six-month timelines. No bloated contracts.
+                Just a better website that works harder for your business.
               </p>
             </AnimateOnScroll>
 
@@ -74,7 +73,7 @@ export default function About() {
                   )}
                 </div>
                 <p className="font-body text-sm text-ocean-700/50">
-                  A dedicated team of engineers, designers & strategists
+                  Trusted by trades, marine, and service businesses
                 </p>
               </div>
             </AnimateOnScroll>
@@ -88,10 +87,10 @@ export default function About() {
                 {/* Stats grid */}
                 <div className="grid grid-cols-2 gap-8">
                   {[
-                    { number: "10+", label: "Years in Industry", icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" },
-                    { number: "6+", label: "Verticals Served", icon: "M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" },
-                    { number: "50+", label: "Projects Delivered", icon: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" },
-                    { number: "Fast", label: "Time to Delivery", icon: "M13 10V3L4 14h7v7l9-11h-7z" },
+                    { number: "10+", label: "Years Building Software", icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" },
+                    { number: "2-4", label: "Week Turnaround", icon: "M13 10V3L4 14h7v7l9-11h-7z" },
+                    { number: "100%", label: "Mobile Optimized", icon: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" },
+                    { number: "SEO", label: "Built In From Day 1", icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" },
                   ].map((stat, i) => (
                     <div key={i} className="text-center">
                       <div className="w-12 h-12 mx-auto mb-3 rounded-2xl bg-gradient-to-br from-brand-blue/10 to-brand-violet/10 flex items-center justify-center">
@@ -119,8 +118,8 @@ export default function About() {
                     </svg>
                   </div>
                   <div>
-                    <div className="font-display font-bold text-sm">Full-Stack AI</div>
-                    <div className="font-body text-xs text-white/70">End-to-end solutions</div>
+                    <div className="font-display font-bold text-sm">Fast Turnaround</div>
+                    <div className="font-body text-xs text-white/70">Weeks, not months</div>
                   </div>
                 </div>
               </div>

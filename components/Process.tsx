@@ -6,30 +6,30 @@ import WaveDivider from "./WaveDivider";
 const steps = [
   {
     number: "01",
-    title: "Discovery",
+    title: "Audit",
     description:
-      "We dive deep into your business, your challenges, and your goals. No cookie-cutter assessments — we map the real landscape before charting a course.",
+      "We review your current site — speed, mobile experience, SEO, design. You get an honest assessment of what&apos;s working and what&apos;s not.",
     icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z",
   },
   {
     number: "02",
     title: "Design",
     description:
-      "Architecture, UX, and technical blueprints come together. We prototype fast so you can see and feel the solution before we build it.",
+      "We build a modern mockup you can see and touch before a single line of code. Your feedback drives every decision.",
     icon: "M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z",
   },
   {
     number: "03",
     title: "Build",
     description:
-      "Agile sprints with full transparency. You see progress every week, give feedback in real-time, and never wonder where things stand.",
+      "Fast, focused development. We keep you in the loop with weekly updates. No surprises, no scope creep.",
     icon: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4",
   },
   {
     number: "04",
-    title: "Launch & Scale",
+    title: "Launch",
     description:
-      "Deployment, monitoring, and continuous improvement. We don't disappear after launch — we stay in the water with you.",
+      "Your new site goes live. We handle hosting, DNS, and everything technical. You just watch the leads come in.",
     icon: "M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z",
   },
 ];
@@ -54,15 +54,14 @@ export default function Process() {
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.1}>
               <h2 className="font-display font-bold text-4xl md:text-5xl text-white leading-tight mb-6">
-                How we{" "}
-                <span className="font-serif italic text-seafoam-400">navigate</span>{" "}
-                your project
+                From outdated to{" "}
+                <span className="font-serif italic text-seafoam-400">outstanding</span>
               </h2>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.2}>
               <p className="font-body text-lg text-white/40 leading-relaxed">
-                A proven approach refined across dozens of projects. Clear milestones,
-                constant communication, no surprises.
+                Most projects go from first call to live site in 2-4 weeks.
+                Here&apos;s how it works.
               </p>
             </AnimateOnScroll>
           </div>

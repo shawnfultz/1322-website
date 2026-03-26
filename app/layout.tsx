@@ -25,23 +25,25 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "1322 Customs | Custom Software & AI Solutions — Charleston, SC",
+  title: "1322 Customs | Modern Websites for Trades & Marine — Charleston, SC",
   description:
-    "1322 Customs LLC builds custom AI systems, distributed software, and smart automation solutions. Based in Charleston, South Carolina — where lowcountry craft meets cutting-edge technology.",
+    "1322 Customs modernizes outdated websites for trade businesses and marine companies. Fast turnaround, modern design, SEO built in. Based in Charleston, South Carolina.",
   keywords: [
-    "custom software development",
-    "AI solutions",
-    "Charleston SC",
-    "software company",
-    "artificial intelligence",
-    "cloud infrastructure",
-    "smart automation",
+    "website modernization",
+    "trade business website",
+    "marine industry website",
+    "Charleston SC web design",
+    "HVAC website",
+    "plumber website",
+    "marina website",
+    "boat dealer website",
+    "small business web design",
   ],
   authors: [{ name: "1322 Customs LLC" }],
   openGraph: {
-    title: "1322 Customs | Custom Software & AI Solutions",
+    title: "1322 Customs | Modern Websites for Trades & Marine",
     description:
-      "Where lowcountry craft meets cutting-edge technology. Custom AI, software, and automation solutions from Charleston, SC.",
+      "We modernize outdated websites for trade businesses and marine companies. Fast turnaround, built to convert. Charleston, SC.",
     url: "https://1322customs.com",
     siteName: "1322 Customs",
     locale: "en_US",
@@ -49,9 +51,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "1322 Customs | Custom Software & AI Solutions",
+    title: "1322 Customs | Modern Websites for Trades & Marine",
     description:
-      "Where lowcountry craft meets cutting-edge technology. Custom AI, software, and automation solutions from Charleston, SC.",
+      "We modernize outdated websites for trade businesses and marine companies. Fast turnaround, built to convert. Charleston, SC.",
   },
   robots: {
     index: true,
