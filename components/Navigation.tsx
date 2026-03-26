@@ -38,8 +38,8 @@ export default function Navigation() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <a href="/" className="flex items-center group">
-              <span className="font-display font-bold text-2xl tracking-tight text-white">
-                1322
+              <span className="font-display font-bold text-2xl tracking-tight">
+                <span className="text-brand-blue-light">/</span><span className="text-white">1322</span>
               </span>
             </a>
 

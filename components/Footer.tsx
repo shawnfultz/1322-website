@@ -27,8 +27,9 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-2">
             <a href="/" className="inline-flex items-center mb-6">
-              <span className="font-display font-bold text-2xl text-white">
-                1322 <span className="font-normal text-white/40">Customs</span>
+              <span className="font-display font-bold text-2xl">
+                <span className="text-brand-blue-light">/</span><span className="text-white">1322</span>
+                <span className="font-normal text-white/40"> Customs</span>
               </span>
             </a>
             <p className="font-body text-white/30 text-sm leading-relaxed max-w-sm mb-4">
