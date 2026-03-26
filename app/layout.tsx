@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { DM_Sans, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
+import LeadModalProvider from "@/components/LeadModalProvider";
+import LeadModal from "@/components/LeadModal";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -75,7 +77,10 @@ export default function RootLayout({
         <link rel="icon" href="/logo.svg" type="image/svg+xml" />
       </head>
       <body className="font-body bg-ocean-950 text-white antialiased overflow-x-hidden">
-        {children}
+        <LeadModalProvider>
+          {children}
+          <LeadModal />
+        </LeadModalProvider>
       </body>
     </html>
   );

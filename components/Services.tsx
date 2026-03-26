@@ -1,10 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
 
 const services = [
   {
     title: "Website Modernization",
+    href: "/services/website-modernization",
     description:
       "Your site is outdated and it's costing you jobs. We rebuild it with modern tech, fast load times, and a design that actually converts visitors into customers.",
     icon: (
@@ -22,6 +24,7 @@ const services = [
   },
   {
     title: "Marine & Maritime Web",
+    href: "/services/marine-web",
     description:
       "Marinas, boat dealers, charter companies, marine services — we know the industry and build sites that speak to boaters. Clean, fast, and built for the water.",
     icon: (
@@ -36,6 +39,7 @@ const services = [
   },
   {
     title: "Trade Business Websites",
+    href: "/services/trade-websites",
     description:
       "HVAC, plumbing, electrical, roofing, landscaping — if you work with your hands, we make sure your website works just as hard. Local SEO included.",
     icon: (
@@ -49,6 +53,7 @@ const services = [
   },
   {
     title: "Growth & Custom Software",
+    href: "/services/growth-software",
     description:
       "Once your site is dialed in, we can go further — booking systems, customer portals, automation, AI tools. We grow with your business.",
     icon: (
@@ -96,7 +101,7 @@ export default function Services() {
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
           {services.map((service, i) => (
             <AnimateOnScroll key={i} delay={i * 0.1} variant="scaleUp">
-              <div className="group relative bg-sand-50 rounded-3xl p-8 lg:p-10 border border-sand-100 hover:border-brand-blue/20 transition-all duration-500 hover:shadow-xl hover:shadow-brand-blue/5 hover:-translate-y-1">
+              <Link href={service.href} className="block group relative bg-sand-50 rounded-3xl p-8 lg:p-10 border border-sand-100 hover:border-brand-blue/20 transition-all duration-500 hover:shadow-xl hover:shadow-brand-blue/5 hover:-translate-y-1">
                 {/* Gradient bar at top */}
                 <div
                   className={`absolute top-0 left-8 right-8 h-px bg-gradient-to-r ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
@@ -124,7 +129,7 @@ export default function Services() {
                     <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-              </div>
+              </Link>
             </AnimateOnScroll>
           ))}
         </div>
