@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import WaveDivider from "./WaveDivider";
+import { useLeadModal } from "./LeadModalProvider";
 
 export default function Hero() {
+  const { open: openModal } = useLeadModal();
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-ocean-950">
       {/* Charleston background image */}
@@ -69,11 +71,11 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.7 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <a
-              href="#contact"
-              className="group inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-body font-semibold text-white bg-gradient-to-r from-brand-blue to-brand-indigo rounded-full hover:shadow-xl hover:shadow-brand-blue/20 transition-all duration-300 hover:-translate-y-0.5"
+            <button
+              onClick={openModal}
+              className="group inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-body font-semibold text-white bg-gradient-to-r from-brand-blue to-brand-indigo rounded-full hover:shadow-xl hover:shadow-brand-blue/20 transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
             >
-              Start a Project
+              Get a Free Quote
               <svg
                 width="16"
                 height="16"
@@ -83,12 +85,12 @@ export default function Hero() {
               >
                 <path d="M3 8h10M9 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-            </a>
+            </button>
             <a
               href="#services"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-body font-medium text-white/70 border border-white/10 rounded-full hover:bg-white/5 hover:text-white transition-all duration-300"
             >
-              Explore Services
+              See How It Works
             </a>
           </motion.div>
         </div>

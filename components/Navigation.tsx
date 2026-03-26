@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "./Logo";
+import { useLeadModal } from "./LeadModalProvider";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -14,6 +15,7 @@ const navLinks = [
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { open: openModal } = useLeadModal();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -58,15 +60,15 @@ export default function Navigation() {
 
             {/* CTA */}
             <div className="hidden md:block">
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 px-6 py-2.5 text-sm font-body font-semibold text-white bg-gradient-to-r from-brand-blue to-brand-indigo rounded-full hover:shadow-lg hover:shadow-brand-blue/25 transition-all duration-300 hover:-translate-y-0.5"
+              <button
+                onClick={openModal}
+                className="inline-flex items-center gap-2 px-6 py-2.5 text-sm font-body font-semibold text-white bg-gradient-to-r from-brand-blue to-brand-indigo rounded-full hover:shadow-lg hover:shadow-brand-blue/25 transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
               >
                 Get Started
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="transition-transform group-hover:translate-x-1">
                   <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-              </a>
+              </button>
             </div>
 
             {/* Mobile menu button */}
@@ -121,16 +123,15 @@ export default function Navigation() {
                   {link.label}
                 </motion.a>
               ))}
-              <motion.a
-                href="#contact"
-                onClick={() => setMobileOpen(false)}
+              <motion.button
+                onClick={() => { setMobileOpen(false); openModal(); }}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: navLinks.length * 0.1 }}
-                className="mt-4 inline-flex items-center justify-center px-8 py-4 text-lg font-body font-semibold text-white bg-gradient-to-r from-brand-blue to-brand-indigo rounded-full"
+                className="mt-4 inline-flex items-center justify-center px-8 py-4 text-lg font-body font-semibold text-white bg-gradient-to-r from-brand-blue to-brand-indigo rounded-full cursor-pointer"
               >
                 Get Started
-              </motion.a>
+              </motion.button>
             </div>
           </motion.div>
         )}

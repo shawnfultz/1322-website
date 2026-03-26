@@ -1,4 +1,7 @@
+"use client";
+
 import Logo from "./Logo";
+import { useLeadModal } from "./LeadModalProvider";
 
 const footerLinks = {
   Services: [
@@ -16,6 +19,8 @@ const footerLinks = {
 };
 
 export default function Footer() {
+  const { open: openModal } = useLeadModal();
+
   return (
     <footer className="relative bg-ocean-950 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
@@ -28,9 +33,17 @@ export default function Footer() {
                 1322 Customs
               </span>
             </a>
-            <p className="font-body text-white/30 text-sm leading-relaxed max-w-sm mb-6">
+            <p className="font-body text-white/30 text-sm leading-relaxed max-w-sm mb-4">
               Modern websites for trade businesses and marine companies.
               Based in Charleston, SC — fast turnaround, real results.
+            </p>
+            <p className="font-body text-white/30 text-sm mb-6">
+              <a
+                href="mailto:shawn@1322customs.com"
+                className="hover:text-white/50 transition-colors"
+              >
+                shawn@1322customs.com
+              </a>
             </p>
             {/* Social links */}
             <div className="flex gap-3">
@@ -79,6 +92,16 @@ export default function Footer() {
                     </a>
                   </li>
                 ))}
+                {heading === "Company" && (
+                  <li>
+                    <button
+                      onClick={openModal}
+                      className="font-body text-sm text-white/30 hover:text-white/60 transition-colors duration-200 cursor-pointer"
+                    >
+                      Book a Call
+                    </button>
+                  </li>
+                )}
               </ul>
             </div>
           ))}
@@ -90,7 +113,6 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} 1322 Customs LLC. All rights reserved.
           </p>
           <div className="flex items-center gap-3 text-white/20">
-            {/* Station 22 marker — subtle nod */}
             <div className="flex items-center gap-1.5">
               <div className="w-4 h-5 rounded-sm bg-station-500/30 flex items-center justify-center">
                 <span className="text-[7px] font-display font-bold text-station-400/80 leading-none">22</span>
