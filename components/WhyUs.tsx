@@ -24,7 +24,7 @@ const props = [
   {
     stat: "You",
     label: "Own Everything",
-    description: "Your site, your code, your domain. No proprietary lock-in, no monthly hostage fees. It's yours.",
+    description: "Your site, your code, your domain. No proprietary lock-in or platforms you can't leave. You own it all.",
     icon: "M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z",
   },
 ];
