@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme {
+  /* Ocean palette - deep nautical darks */
+  --color-ocean-950: #060d18;
+  --color-ocean-900: #0c1b2a;
+  --color-ocean-800: #122a42;
+  --color-ocean-700: #1a3d5c;
+  --color-ocean-600: #245380;
+
+  /* Sand palette - warm Charleston neutrals */
+  --color-sand-50: #faf8f5;
+  --color-sand-100: #f3efe8;
+  --color-sand-200: #e8e0d4;
+  --color-sand-300: #d4c9b8;
+
+  /* Brand blues */
+  --color-brand-blue: #2563eb;
+  --color-brand-blue-light: #60a5fa;
+  --color-brand-indigo: #4f46e5;
+  --color-brand-violet: #7c3aed;
+  --color-brand-violet-light: #a78bfa;
+
+  /* Seafoam accent */
+  --color-seafoam-300: #7dd3fc;
+  --color-seafoam-400: #38bdf8;
+  --color-seafoam-500: #0ea5e9;
+
+  /* Fonts */
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body: "Outfit", system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+
+  /* Custom animations */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-delayed: float 6s ease-in-out 3s infinite;
+  --animate-pulse-slow: pulse-slow 4s ease-in-out infinite;
+  --animate-spin-very-slow: spin 60s linear infinite;
+  --animate-wave: wave 8s ease-in-out infinite;
+  --animate-tide: tide 12s ease-in-out infinite;
+  --animate-shimmer: shimmer 3s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+  }
+
+  @keyframes wave {
+    0%, 100% { transform: translateX(0) translateY(0); }
+    25% { transform: translateX(-5px) translateY(-3px); }
+    50% { transform: translateX(0) translateY(-5px); }
+    75% { transform: translateX(5px) translateY(-3px); }
+  }
+
+  @keyframes tide {
+    0%, 100% { transform: translateY(0) scaleY(1); }
+    50% { transform: translateY(-8px) scaleY(1.02); }
+  }
+
+  @keyframes shimmer {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-ocean-950);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    var(--color-brand-blue),
+    var(--color-brand-violet)
+  );
+  border-radius: 4px;
+}
+
+/* Gradient text utility */
+.text-gradient-brand {
+  background: linear-gradient(
+    135deg,
+    var(--color-brand-blue) 0%,
+    var(--color-brand-indigo) 40%,
+    var(--color-brand-violet) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-seafoam {
+  background: linear-gradient(
+    135deg,
+    var(--color-seafoam-400) 0%,
+    var(--color-brand-blue-light) 50%,
+    var(--color-brand-blue) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Noise texture overlay */
+.noise-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Glass card */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Selection color */
+::selection {
+  background: rgba(37, 99, 235, 0.3);
+  color: inherit;
+}
