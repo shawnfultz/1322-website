@@ -37,9 +37,14 @@ export default function Navigation() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <a href="/" className="flex items-center group">
-              <span className="font-display font-bold text-2xl tracking-tight">
-                <span className="text-brand-blue-light">/</span><span className="text-white">1322</span>
+            <a href="/" className="flex items-center gap-2.5 group">
+              <svg width="14" height="22" viewBox="0 0 14 22" fill="none" className="transition-transform duration-300 group-hover:scale-110">
+                <line x1="7" y1="8" x2="7" y2="22" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
+                <circle cx="7" cy="4" r="3.5" stroke="#60a5fa" strokeWidth="1.5" fill="none" />
+                <circle cx="7" cy="4" r="1.5" fill="#60a5fa" />
+              </svg>
+              <span className="font-display font-bold text-2xl tracking-tight text-white">
+                1322
               </span>
             </a>
 

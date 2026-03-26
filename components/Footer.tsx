@@ -26,10 +26,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand column */}
           <div className="lg:col-span-2">
-            <a href="/" className="inline-flex items-center mb-6">
-              <span className="font-display font-bold text-2xl">
-                <span className="text-brand-blue-light">/</span><span className="text-white">1322</span>
-                <span className="font-normal text-white/40"> Customs</span>
+            <a href="/" className="inline-flex items-center gap-2.5 mb-6">
+              <svg width="14" height="22" viewBox="0 0 14 22" fill="none">
+                <line x1="7" y1="8" x2="7" y2="22" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.4" />
+                <circle cx="7" cy="4" r="3.5" stroke="#60a5fa" strokeWidth="1.5" fill="none" opacity="0.5" />
+                <circle cx="7" cy="4" r="1.5" fill="#60a5fa" opacity="0.5" />
+              </svg>
+              <span className="font-display font-bold text-2xl text-white">
+                1322 <span className="font-normal text-white/40">Customs</span>
               </span>
             </a>
             <p className="font-body text-white/30 text-sm leading-relaxed max-w-sm mb-4">
