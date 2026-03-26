@@ -1,8 +1,10 @@
 "use client";
 
 import AnimateOnScroll from "./AnimateOnScroll";
+import { useLeadModal } from "./LeadModalProvider";
 
 export default function About() {
+  const { open: openModal } = useLeadModal();
   return (
     <section id="about" className="relative bg-sand-50 py-24 lg:py-32 overflow-hidden coastal-waves">
       {/* Decorative wave watermark */}
@@ -57,17 +59,15 @@ export default function About() {
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={0.4}>
-              <a
-                href="mailto:shawn@1322customs.com"
-                className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-white border border-sand-200 hover:border-brand-blue/20 hover:shadow-md transition-all duration-300 group"
+              <button
+                onClick={openModal}
+                className="group inline-flex items-center gap-2 px-6 py-3 font-body font-semibold text-white bg-gradient-to-r from-brand-blue to-brand-indigo rounded-full hover:shadow-lg hover:shadow-brand-blue/20 transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
               >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
-                  <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                Get Started
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="transition-transform duration-300 group-hover:translate-x-1">
+                  <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <span className="font-body text-sm text-ocean-700/60 group-hover:text-ocean-900 transition-colors">
-                  shawn@1322customs.com
-                </span>
-              </a>
+              </button>
             </AnimateOnScroll>
           </div>
 
