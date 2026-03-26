@@ -1,30 +1,26 @@
 import type { Metadata } from "next";
-import {
-  Bricolage_Grotesque,
-  Outfit,
-  Instrument_Serif,
-} from "next/font/google";
+import { DM_Sans, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 
-const bricolage = Bricolage_Grotesque({
+const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-display",
   display: "swap",
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const outfit = Outfit({
+const dmSansBody = DM_Sans({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const instrumentSerif = Instrument_Serif({
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
   variable: "--font-serif",
   display: "swap",
-  weight: ["400"],
+  weight: ["400", "600"],
   style: ["normal", "italic"],
 });
 
@@ -71,7 +67,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${bricolage.variable} ${outfit.variable} ${instrumentSerif.variable}`}
+      className={`${dmSans.variable} ${dmSansBody.variable} ${sourceSerif.variable}`}
     >
       <head>
         <link rel="icon" href="/logo.svg" type="image/svg+xml" />

@@ -27,9 +27,9 @@
   --color-seafoam-500: #0ea5e9;
 
   /* Fonts */
-  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
-  --font-body: "Outfit", system-ui, sans-serif;
-  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-display: "DM Sans", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-serif: "Source Serif 4", Georgia, serif;
 
   /* Custom animations */
   --animate-float: float 6s ease-in-out infinite;

@@ -80,11 +80,11 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="font-display font-extrabold text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.95] tracking-tight mb-6"
           >
-            Crafting the
+            Custom Software.
             <br />
-            <span className="text-gradient-brand">Future</span> of
+            <span className="text-gradient-brand">Smarter AI.</span>
             <br />
-            Software
+            Real Results.
           </motion.h1>
 
           {/* Subheadline */}
@@ -94,8 +94,8 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.5 }}
             className="text-lg md:text-xl font-body text-white/50 max-w-xl mb-10 leading-relaxed"
           >
-            Where lowcountry craft meets cutting-edge technology. We build
-            intelligent software solutions that transform how businesses operate.
+            We design and build custom software and AI solutions that
+            drive measurable business growth. Based in Charleston, SC.
           </motion.p>
 
           {/* CTAs */}
