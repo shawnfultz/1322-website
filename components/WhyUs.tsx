@@ -8,24 +8,32 @@ const props = [
     label: "Weeks to Launch",
     description: "No six-month timelines. We move fast so you start seeing results sooner, not later.",
     icon: "M13 10V3L4 14h7v7l9-11h-7z",
+    gradient: "from-seafoam-400 to-brand-blue",
+    iconColor: "#0ea5e9",
   },
   {
     stat: "100%",
     label: "Mobile Friendly",
     description: "Over 60% of your customers are on their phone. Every site we build looks great on any device.",
     icon: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
+    gradient: "from-brand-blue to-brand-indigo",
+    iconColor: "#2563eb",
   },
   {
     stat: "Local",
     label: "Charleston Based",
     description: "We're not overseas. We're right here in Charleston. Same timezone, real conversations, no runaround.",
     icon: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z",
+    gradient: "from-station-400 to-station-600",
+    iconColor: "#e84c30",
   },
   {
     stat: "You",
     label: "Own Everything",
     description: "Your site, your code, your domain. No proprietary lock-in or platforms you can't leave. You own it all.",
     icon: "M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z",
+    gradient: "from-brand-indigo to-brand-violet",
+    iconColor: "#4f46e5",
   },
 ];
 
@@ -58,16 +66,19 @@ export default function WhyUs() {
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
           {props.map((prop, i) => (
             <AnimateOnScroll key={i} delay={i * 0.1} variant="fadeUp">
-              <div className="group relative flex gap-6 bg-white rounded-2xl p-8 border border-sand-100 hover:border-brand-blue/15 transition-all duration-500 hover:shadow-lg hover:shadow-brand-blue/5">
+              <div className="group relative flex gap-6 bg-white rounded-2xl p-8 border border-sand-100 hover:border-brand-blue/15 transition-all duration-500 hover:shadow-lg hover:shadow-brand-blue/5 overflow-hidden">
+                {/* Coastal gradient accent — top edge */}
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${prop.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+
                 {/* Icon */}
                 <div className="flex-shrink-0">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-blue/10 to-brand-violet/10 flex items-center justify-center group-hover:from-brand-blue/15 group-hover:to-brand-violet/15 transition-colors duration-300">
+                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${prop.gradient} flex items-center justify-center shadow-sm`}>
                     <svg
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="#2563eb"
+                      stroke="white"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
