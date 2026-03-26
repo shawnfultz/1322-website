@@ -41,19 +41,19 @@ export default function About() {
 
             <AnimateOnScroll delay={0.2}>
               <p className="font-body text-lg text-ocean-700/70 leading-relaxed mb-6">
-                Founded in Charleston, South Carolina, 1322 Customs brings the same
-                meticulous craftsmanship the lowcountry is known for to the world of
-                software and artificial intelligence.
+                With over 10 years of deep experience in the mortgage and financial
+                services industry, 1322 Customs has expanded into a full-service
+                software and AI studio serving healthcare, logistics, marine,
+                real estate, and beyond.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={0.3}>
               <p className="font-body text-lg text-ocean-700/70 leading-relaxed mb-8">
-                We believe great software is built like a great city &mdash; with
-                intention, resilience, and an eye toward what comes next. Our team
-                combines deep technical expertise with a genuine understanding of
-                business challenges to deliver solutions that don&apos;t just work,
-                they transform.
+                Whether you need a polished front-end website or a complex distributed
+                system, we move fast without cutting corners. Our Charleston-based team
+                brings hands-on industry knowledge to every project &mdash; we don&apos;t
+                just write code, we understand the business behind it.
               </p>
             </AnimateOnScroll>
 
@@ -88,10 +88,10 @@ export default function About() {
                 {/* Stats grid */}
                 <div className="grid grid-cols-2 gap-8">
                   {[
+                    { number: "10+", label: "Years in Industry", icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" },
+                    { number: "6+", label: "Verticals Served", icon: "M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" },
                     { number: "50+", label: "Projects Delivered", icon: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" },
-                    { number: "99%", label: "Client Satisfaction", icon: "M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905a3.61 3.61 0 01-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" },
-                    { number: "24/7", label: "Support & Monitoring", icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" },
-                    { number: "3x", label: "Faster Time to Market", icon: "M13 10V3L4 14h7v7l9-11h-7z" },
+                    { number: "Fast", label: "Time to Delivery", icon: "M13 10V3L4 14h7v7l9-11h-7z" },
                   ].map((stat, i) => (
                     <div key={i} className="text-center">
                       <div className="w-12 h-12 mx-auto mb-3 rounded-2xl bg-gradient-to-br from-brand-blue/10 to-brand-violet/10 flex items-center justify-center">

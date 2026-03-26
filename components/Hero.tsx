@@ -3,59 +3,21 @@
 import { motion } from "framer-motion";
 import WaveDivider from "./WaveDivider";
 
-function CompassRose() {
-  return (
-    <svg
-      viewBox="0 0 400 400"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="absolute right-[-5%] top-1/2 -translate-y-1/2 w-[500px] h-[500px] lg:w-[700px] lg:h-[700px] opacity-[0.04] animate-spin-very-slow"
-    >
-      {/* Outer circle */}
-      <circle cx="200" cy="200" r="190" stroke="white" strokeWidth="0.5" />
-      <circle cx="200" cy="200" r="170" stroke="white" strokeWidth="0.3" />
-      {/* Cardinal lines */}
-      <line x1="200" y1="10" x2="200" y2="80" stroke="white" strokeWidth="1" />
-      <line x1="200" y1="320" x2="200" y2="390" stroke="white" strokeWidth="1" />
-      <line x1="10" y1="200" x2="80" y2="200" stroke="white" strokeWidth="1" />
-      <line x1="320" y1="200" x2="390" y2="200" stroke="white" strokeWidth="1" />
-      {/* Diagonal lines */}
-      <line x1="66" y1="66" x2="120" y2="120" stroke="white" strokeWidth="0.5" />
-      <line x1="280" y1="280" x2="334" y2="334" stroke="white" strokeWidth="0.5" />
-      <line x1="334" y1="66" x2="280" y2="120" stroke="white" strokeWidth="0.5" />
-      <line x1="120" y1="280" x2="66" y2="334" stroke="white" strokeWidth="0.5" />
-      {/* Center diamond */}
-      <path d="M200 140 L260 200 L200 260 L140 200 Z" stroke="white" strokeWidth="0.8" />
-      <path d="M200 160 L240 200 L200 240 L160 200 Z" stroke="white" strokeWidth="0.5" />
-      {/* N marker */}
-      <text x="200" y="55" textAnchor="middle" fill="white" fontSize="16" fontFamily="serif" opacity="0.8">N</text>
-    </svg>
-  );
-}
-
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-ocean-950">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-ocean-950 via-ocean-900 to-ocean-950" />
-
-      {/* Subtle grid pattern */}
+      {/* Charleston background image */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/hero-charleston.jpg')" }}
       />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-ocean-950/75" />
+      {/* Gradient overlay for depth */}
+      <div className="absolute inset-0 bg-gradient-to-t from-ocean-950 via-ocean-950/40 to-ocean-950/60" />
 
-      {/* Animated gradient orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-blue/10 rounded-full blur-[120px] animate-float" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-violet/10 rounded-full blur-[120px] animate-float-delayed" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-indigo/5 rounded-full blur-[150px] animate-pulse-slow" />
-
-      {/* Compass rose watermark */}
-      <CompassRose />
+      {/* Subtle blue tint at bottom for wave transition */}
+      <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-ocean-950 to-transparent" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32 lg:py-0">
@@ -92,10 +54,11 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
-            className="text-lg md:text-xl font-body text-white/50 max-w-xl mb-10 leading-relaxed"
+            className="text-lg md:text-xl font-body text-white/60 max-w-xl mb-10 leading-relaxed"
           >
-            We design and build custom software and AI solutions that
-            drive measurable business growth. Based in Charleston, SC.
+            Over a decade of experience across mortgage, fintech, healthcare,
+            and more. From polished marketing sites to complex enterprise
+            systems &mdash; we deliver fast and get it right.
           </motion.p>
 
           {/* CTAs */}
