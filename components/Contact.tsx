@@ -88,13 +88,13 @@ export default function Contact() {
           <AnimateOnScroll delay={0.5}>
             <div className="mt-12 pt-8 border-t border-white/5">
               <p className="font-body text-sm text-white/25">
-                Prefer email?{" "}
-                <a
-                  href="mailto:shawn@1322customs.com"
-                  className="text-white/40 hover:text-seafoam-400 transition-colors underline underline-offset-2"
+                Takes 30 seconds.{" "}
+                <button
+                  onClick={openModal}
+                  className="text-seafoam-400/70 hover:text-seafoam-400 transition-colors cursor-pointer"
                 >
-                  shawn@1322customs.com
-                </a>
+                  No commitment, just a conversation.
+                </button>
               </p>
             </div>
           </AnimateOnScroll>

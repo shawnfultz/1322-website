@@ -36,14 +36,12 @@ export default function Footer() {
               Modern websites for trade businesses and marine companies.
               Based in Charleston, SC — fast turnaround, real results.
             </p>
-            <p className="font-body text-white/30 text-sm mb-6">
-              <a
-                href="mailto:shawn@1322customs.com"
-                className="hover:text-white/50 transition-colors"
-              >
-                shawn@1322customs.com
-              </a>
-            </p>
+            <button
+              onClick={openModal}
+              className="inline-flex items-center gap-2 px-5 py-2.5 mb-6 font-body text-sm font-medium text-white bg-white/10 border border-white/10 rounded-full hover:bg-white/15 transition-all cursor-pointer"
+            >
+              Get a Free Quote
+            </button>
             {/* Social links — hidden until accounts are set up */}
             {/* <div className="flex gap-3">social icons here</div> */}
           </div>
