@@ -8,7 +8,7 @@ const steps = [
     number: "01",
     title: "Audit",
     description:
-      "We review your current site — speed, mobile experience, SEO, design. You get an honest assessment of what&apos;s working and what&apos;s not.",
+      "We review your current site — speed, mobile experience, SEO, design. You get an honest assessment of what's working and what's not.",
     icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z",
   },
   {
