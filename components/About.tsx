@@ -41,9 +41,9 @@ export default function About() {
 
             <AnimateOnScroll delay={0.2}>
               <p className="font-body text-lg text-ocean-700/70 leading-relaxed mb-6">
-                Most trade and marine businesses are running on websites built
-                five or ten years ago &mdash; slow, outdated, and not bringing in
-                the work they should. We fix that. Fast.
+                Most small businesses are running on websites built five or ten
+                years ago &mdash; slow, outdated, and not bringing in the work
+                they should. We fix that. Fast.
               </p>
             </AnimateOnScroll>
 
@@ -57,25 +57,17 @@ export default function About() {
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={0.4}>
-              <div className="flex items-center gap-6">
-                <div className="flex -space-x-2">
-                  {["bg-brand-blue", "bg-brand-indigo", "bg-brand-violet", "bg-seafoam-400"].map(
-                    (bg, i) => (
-                      <div
-                        key={i}
-                        className={`w-10 h-10 rounded-full ${bg} border-2 border-sand-50 flex items-center justify-center`}
-                      >
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="white" opacity="0.9">
-                          <path d="M8 8a3 3 0 100-6 3 3 0 000 6zM2 14a6 6 0 0112 0H2z" />
-                        </svg>
-                      </div>
-                    )
-                  )}
-                </div>
-                <p className="font-body text-sm text-ocean-700/50">
-                  Trusted by trades, marine, and service businesses
-                </p>
-              </div>
+              <a
+                href="mailto:shawn@1322customs.com"
+                className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-white border border-sand-200 hover:border-brand-blue/20 hover:shadow-md transition-all duration-300 group"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
+                  <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <span className="font-body text-sm text-ocean-700/60 group-hover:text-ocean-900 transition-colors">
+                  shawn@1322customs.com
+                </span>
+              </a>
             </AnimateOnScroll>
           </div>
 
