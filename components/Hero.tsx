@@ -13,10 +13,10 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/hero-charleston.jpg')" }}
       />
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-ocean-950/50" />
-      {/* Gradient overlay — heavier at bottom for wave transition, lighter at top to show image */}
-      <div className="absolute inset-0 bg-gradient-to-t from-ocean-950/90 via-ocean-950/20 to-transparent" />
+      {/* Light overlay — let the image breathe */}
+      <div className="absolute inset-0 bg-ocean-950/30" />
+      {/* Gradient — dark at bottom for wave transition, transparent at top to show image */}
+      <div className="absolute inset-0 bg-gradient-to-t from-ocean-950/80 via-transparent to-ocean-950/10" />
 
       {/* Subtle blue tint at bottom for wave transition */}
       <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-ocean-950 to-transparent" />
@@ -31,9 +31,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-8"
           >
-            <span className="w-2 h-2 rounded-full bg-station-500 animate-pulse-slow" />
+            <span className="w-2 h-2 rounded-full bg-seafoam-400 animate-pulse-slow" />
             <span className="text-sm font-body text-white/70">
-              Charleston, SC &mdash; Web Modernization for Trades & Marine
+              Charleston, SC &mdash; Website Design & Modernization
             </span>
           </motion.div>
 

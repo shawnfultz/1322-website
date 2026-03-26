@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand column */}
           <div className="lg:col-span-2">
-            <a href="#" className="inline-flex items-center gap-3 mb-6">
+            <a href="/" className="inline-flex items-center gap-3 mb-6">
               <Logo className="w-9 h-9" />
               <span className="font-display font-bold text-xl text-gradient-brand">
                 1322 Customs
@@ -145,8 +145,8 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-3 text-white/20">
             <div className="flex items-center gap-1.5">
-              <div className="w-4 h-5 rounded-sm bg-station-500/30 flex items-center justify-center">
-                <span className="text-[7px] font-display font-bold text-station-400/80 leading-none">22</span>
+              <div className="w-4 h-5 rounded-sm bg-brand-blue/20 flex items-center justify-center">
+                <span className="text-[7px] font-display font-bold text-brand-blue-light/60 leading-none">22</span>
               </div>
               <span className="font-body text-xs text-white/25">
                 Est. Station 22

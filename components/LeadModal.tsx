@@ -148,7 +148,7 @@ export default function LeadModal() {
                     <div className="space-y-4">
                       <div>
                         <label className="block font-body text-sm font-medium text-ocean-700 mb-1.5">
-                          Name <span className="text-station-500">*</span>
+                          Name <span className="text-brand-blue">*</span>
                         </label>
                         <input
                           type="text"
@@ -160,7 +160,7 @@ export default function LeadModal() {
                       </div>
                       <div>
                         <label className="block font-body text-sm font-medium text-ocean-700 mb-1.5">
-                          Email <span className="text-station-500">*</span>
+                          Email <span className="text-brand-blue">*</span>
                         </label>
                         <input
                           type="email"
