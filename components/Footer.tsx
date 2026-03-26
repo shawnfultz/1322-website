@@ -89,15 +89,19 @@ export default function Footer() {
           <p className="font-body text-xs text-white/20">
             &copy; {new Date().getFullYear()} 1322 Customs LLC. All rights reserved.
           </p>
-          <div className="flex items-center gap-2 text-white/20">
-            {/* Anchor icon */}
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="12" cy="5" r="3" />
-              <line x1="12" y1="22" x2="12" y2="8" />
-              <path d="M5 12H2a10 10 0 0020 0h-3" />
-            </svg>
+          <div className="flex items-center gap-3 text-white/20">
+            {/* Station 22 marker — subtle nod */}
+            <div className="flex items-center gap-1.5">
+              <div className="w-4 h-5 rounded-sm bg-station-500/30 flex items-center justify-center">
+                <span className="text-[7px] font-display font-bold text-station-400/80 leading-none">22</span>
+              </div>
+              <span className="font-body text-xs text-white/25">
+                Est. Station 22
+              </span>
+            </div>
+            <span className="text-white/10">&middot;</span>
             <span className="font-body text-xs">
-              Crafted in Charleston, SC
+              Charleston, SC
             </span>
           </div>
         </div>

@@ -26,6 +26,11 @@
   --color-seafoam-400: #38bdf8;
   --color-seafoam-500: #0ea5e9;
 
+  /* Station 22 warm accent — pulled from the beach marker */
+  --color-station-400: #f97350;
+  --color-station-500: #e84c30;
+  --color-station-600: #cc3a20;
+
   /* Fonts */
   --font-display: "DM Sans", system-ui, sans-serif;
   --font-body: "DM Sans", system-ui, sans-serif;

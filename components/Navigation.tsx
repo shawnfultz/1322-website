@@ -39,9 +39,14 @@ export default function Navigation() {
             {/* Logo */}
             <a href="#" className="flex items-center gap-3 group">
               <Logo className="w-10 h-10 transition-transform duration-300 group-hover:scale-110" />
-              <span className="font-display font-bold text-xl tracking-tight text-gradient-brand">
-                1322
-              </span>
+              <div className="flex items-baseline gap-2">
+                <span className="font-display font-bold text-xl tracking-tight text-gradient-brand">
+                  1322
+                </span>
+                <span className="hidden sm:inline text-[10px] font-body font-medium tracking-[0.2em] uppercase text-station-500/50 group-hover:text-station-500/80 transition-colors duration-300">
+                  Stn 22
+                </span>
+              </div>
             </a>
 
             {/* Desktop nav */}

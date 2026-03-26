@@ -29,7 +29,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-8"
           >
-            <span className="w-2 h-2 rounded-full bg-seafoam-400 animate-pulse-slow" />
+            <span className="w-2 h-2 rounded-full bg-station-500 animate-pulse-slow" />
             <span className="text-sm font-body text-white/70">
               Charleston, SC &mdash; Software & AI Solutions
             </span>
