@@ -107,8 +107,39 @@ export default function Footer() {
           ))}
         </div>
 
+        {/* Service Areas */}
+        <div className="mt-12 pt-8 border-t border-white/5">
+          <h4 className="font-display font-semibold text-white/40 text-xs tracking-widest uppercase mb-4">
+            Service Areas
+          </h4>
+          <div className="flex flex-wrap gap-x-4 gap-y-1">
+            {[
+              { name: "Charleston", slug: "charleston" },
+              { name: "Summerville", slug: "summerville" },
+              { name: "Hanahan", slug: "hanahan" },
+              { name: "Mount Pleasant", slug: "mount-pleasant" },
+              { name: "North Charleston", slug: "north-charleston" },
+              { name: "Goose Creek", slug: "goose-creek" },
+              { name: "James Island", slug: "james-island" },
+              { name: "Johns Island", slug: "johns-island" },
+              { name: "West Ashley", slug: "west-ashley" },
+              { name: "Daniel Island", slug: "daniel-island" },
+              { name: "Isle of Palms", slug: "isle-of-palms" },
+              { name: "Folly Beach", slug: "folly-beach" },
+            ].map((area) => (
+              <a
+                key={area.slug}
+                href={`/areas/${area.slug}`}
+                className="font-body text-xs text-white/20 hover:text-white/40 transition-colors"
+              >
+                {area.name}
+              </a>
+            ))}
+          </div>
+        </div>
+
         {/* Bottom bar */}
-        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mt-8 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-body text-xs text-white/20">
             &copy; {new Date().getFullYear()} 1322 Customs LLC. All rights reserved.
           </p>

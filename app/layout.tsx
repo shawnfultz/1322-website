@@ -3,6 +3,7 @@ import { DM_Sans, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import LeadModalProvider from "@/components/LeadModalProvider";
 import LeadModal from "@/components/LeadModal";
+import StructuredData from "@/components/StructuredData";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -75,6 +76,7 @@ export default function RootLayout({
     >
       <head>
         <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+        <StructuredData />
       </head>
       <body className="font-body bg-ocean-950 text-white antialiased overflow-x-hidden">
         <LeadModalProvider>

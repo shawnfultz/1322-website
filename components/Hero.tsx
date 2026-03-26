@@ -14,9 +14,9 @@ export default function Hero() {
         style={{ backgroundImage: "url('/hero-charleston.jpg')" }}
       />
       {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-ocean-950/75" />
-      {/* Gradient overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-t from-ocean-950 via-ocean-950/40 to-ocean-950/60" />
+      <div className="absolute inset-0 bg-ocean-950/50" />
+      {/* Gradient overlay — heavier at bottom for wave transition, lighter at top to show image */}
+      <div className="absolute inset-0 bg-gradient-to-t from-ocean-950/90 via-ocean-950/20 to-transparent" />
 
       {/* Subtle blue tint at bottom for wave transition */}
       <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-ocean-950 to-transparent" />
