@@ -1,6 +1,5 @@
 "use client";
 
-import Logo from "./Logo";
 import { useLeadModal } from "./LeadModalProvider";
 
 const footerLinks = {
@@ -27,10 +26,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand column */}
           <div className="lg:col-span-2">
-            <a href="/" className="inline-flex items-center gap-3 mb-6">
-              <Logo className="w-9 h-9" />
-              <span className="font-display font-bold text-xl text-gradient-brand">
-                1322 Customs
+            <a href="/" className="inline-flex items-center mb-6">
+              <span className="font-display font-bold text-2xl text-white">
+                1322 <span className="font-normal text-white/40">Customs</span>
               </span>
             </a>
             <p className="font-body text-white/30 text-sm leading-relaxed max-w-sm mb-4">
