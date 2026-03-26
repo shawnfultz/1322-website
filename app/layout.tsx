@@ -28,35 +28,50 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "1322 Customs | Modern Websites for Trades & Marine — Charleston, SC",
+  title: "Web Design Charleston SC | Modern Websites | 1322 Customs",
   description:
-    "1322 Customs modernizes outdated websites for trade businesses and marine companies. Fast turnaround, modern design, SEO built in. Based in Charleston, South Carolina.",
+    "Charleston SC web design and website modernization for small businesses. Fast turnaround, mobile-friendly, SEO built in. Serving Charleston, Summerville, Mount Pleasant & the Lowcountry.",
   keywords: [
+    "web design Charleston SC",
+    "website design Charleston",
+    "Charleston web developer",
     "website modernization",
-    "trade business website",
-    "marine industry website",
-    "Charleston SC web design",
-    "HVAC website",
+    "small business website Charleston",
+    "HVAC website design",
     "plumber website",
-    "marina website",
-    "boat dealer website",
-    "small business web design",
+    "marina website design",
+    "Summerville web design",
+    "Mount Pleasant web design",
+    "SEO Charleston SC",
   ],
   authors: [{ name: "1322 Customs LLC" }],
+  metadataBase: new URL("https://1322customs.com"),
+  alternates: {
+    canonical: "https://1322customs.com",
+  },
   openGraph: {
-    title: "1322 Customs | Modern Websites for Trades & Marine",
+    title: "Web Design Charleston SC | 1322 Customs",
     description:
-      "We modernize outdated websites for trade businesses and marine companies. Fast turnaround, built to convert. Charleston, SC.",
+      "Modern websites for small businesses. Fast turnaround, mobile-friendly, SEO built in. Serving the greater Charleston, SC area.",
     url: "https://1322customs.com",
     siteName: "1322 Customs",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "1322 Customs — Web Design Charleston SC",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "1322 Customs | Modern Websites for Trades & Marine",
+    title: "Web Design Charleston SC | 1322 Customs",
     description:
-      "We modernize outdated websites for trade businesses and marine companies. Fast turnaround, built to convert. Charleston, SC.",
+      "Modern websites for small businesses. Fast turnaround, mobile-friendly, SEO built in. Charleston, SC.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,

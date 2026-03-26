@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Growth & Custom Software | 1322 Customs — Charleston, SC",
-  description: "Booking systems, customer portals, automation, and AI tools. We grow with your business beyond just a website.",
+  title: "Custom Software Development Charleston SC | Booking & Automation | 1322 Customs",
+  description: "Custom software, booking systems, customer portals, workflow automation, and AI tools for businesses in Charleston SC. We grow with you.",
+  alternates: { canonical: "https://1322customs.com/services/growth-software" },
 };
 
 export default function GrowthSoftware() {

@@ -17,10 +17,11 @@ export async function generateMetadata({
   if (!area) return {};
 
   return {
-    title: `Web Design & SEO in ${area.name}, SC | 1322 Customs`,
+    title: `Web Design ${area.name} SC | Website Design & SEO | 1322 Customs`,
     description: area.description,
+    alternates: { canonical: `https://1322customs.com/areas/${slug}` },
     openGraph: {
-      title: `Web Design & SEO in ${area.name}, SC | 1322 Customs`,
+      title: `Web Design ${area.name} SC | 1322 Customs`,
       description: area.description,
     },
   };

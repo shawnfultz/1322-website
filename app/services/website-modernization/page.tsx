@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Website Modernization | 1322 Customs — Charleston, SC",
-  description: "We take outdated websites and rebuild them with modern tech, fast load times, and designs that convert. 2-4 week turnaround.",
+  title: "Website Modernization Charleston SC | Redesign Your Site | 1322 Customs",
+  description: "Outdated website? We rebuild it with modern tech, fast load times, mobile-first design, and SEO that ranks. 2-4 week turnaround. Charleston, SC.",
+  alternates: { canonical: "https://1322customs.com/services/website-modernization" },
 };
 
 export default function WebsiteModernization() {

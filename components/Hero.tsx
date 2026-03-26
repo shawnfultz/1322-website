@@ -8,10 +8,11 @@ export default function Hero() {
   const { open: openModal } = useLeadModal();
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-ocean-950">
-      {/* Charleston background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/hero-charleston.jpg')" }}
+      {/* Charleston background image — using img for SEO alt text */}
+      <img
+        src="/hero-charleston.jpg"
+        alt="Morris Island Lighthouse at sunset near Folly Beach, Charleston SC — 1322 Customs web design"
+        className="absolute inset-0 w-full h-full object-cover"
       />
       {/* Light overlay — let the image breathe */}
       <div className="absolute inset-0 bg-ocean-950/30" />
@@ -47,7 +48,7 @@ export default function Hero() {
             Your Business
             <br />
             Deserves a{" "}
-            <span className="text-gradient-brand">Better</span>
+            <span className="text-gradient-brand">Modern</span>
             <br />
             Website.
           </motion.h1>

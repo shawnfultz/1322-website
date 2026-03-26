@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Trade Business Websites | 1322 Customs — Charleston, SC",
-  description: "Modern websites for HVAC, plumbing, electrical, roofing, and landscaping companies. Local SEO included. Fast turnaround.",
+  title: "HVAC & Plumber Website Design Charleston SC | Trade Websites | 1322 Customs",
+  description: "Website design for HVAC, plumbing, electrical, roofing, and landscaping companies in Charleston SC. Local SEO included. Fast turnaround.",
+  alternates: { canonical: "https://1322customs.com/services/trade-websites" },
 };
 
 export default function TradeWebsites() {

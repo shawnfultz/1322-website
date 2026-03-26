@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Marine & Maritime Websites | 1322 Customs — Charleston, SC",
-  description: "Websites for marinas, boat dealers, charter companies, and marine services. Built by a team that knows the water.",
+  title: "Marina & Boat Dealer Website Design | Marine Web | 1322 Customs Charleston SC",
+  description: "Website design for marinas, boat dealers, charter companies, and marine services in Charleston SC. Built by a team that knows the water.",
+  alternates: { canonical: "https://1322customs.com/services/marine-web" },
 };
 
 export default function MarineWeb() {
