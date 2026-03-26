@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
+import { useLeadModal } from "./LeadModalProvider";
 
 const areas = [
   { name: "Charleston", slug: "charleston" },
@@ -19,6 +20,7 @@ const areas = [
 ];
 
 export default function ServiceAreas() {
+  const { open: openModal } = useLeadModal();
   return (
     <section className="relative bg-white py-20 lg:py-28 overflow-hidden">
       <div className="absolute top-0 left-0 right-0 tide-line" />
@@ -79,7 +81,12 @@ export default function ServiceAreas() {
         <AnimateOnScroll delay={0.4}>
           <p className="text-center mt-8 font-body text-sm text-ocean-700/30">
             Don&apos;t see your area? We work with businesses nationwide.{" "}
-            <span className="text-brand-blue/50">Just reach out.</span>
+            <button
+              onClick={openModal}
+              className="text-brand-blue font-medium hover:text-brand-indigo transition-colors cursor-pointer"
+            >
+              Just reach out.
+            </button>
           </p>
         </AnimateOnScroll>
       </div>
