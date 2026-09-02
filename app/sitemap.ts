@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { appPolicies } from "@/lib/legal";
 
 const areas = [
   "charleston",
@@ -39,5 +40,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
+    // App Store listings link at these, so they must stay indexable.
+    ...appPolicies.map((p) => ({
+      url: `${base}/privacy/${p.slug}`,
+      lastModified: new Date(p.updatedISO),
+      changeFrequency: "yearly" as const,
+      priority: 0.4,
+    })),
+    {
+      url: `${base}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: "yearly" as const,
+      priority: 0.3,
+    },
+    {
+      url: `${base}/terms`,
+      lastModified: new Date(),
+      changeFrequency: "yearly" as const,
+      priority: 0.3,
+    },
   ];
 }

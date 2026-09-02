@@ -15,6 +15,12 @@ const footerLinks = {
     { label: "Why Us", href: "#about" },
     { label: "Contact", href: "#contact" },
   ],
+  Legal: [
+    { label: "Privacy Policy", href: "/privacy" },
+    { label: "Terms of Service", href: "/terms" },
+    { label: "Wake — app privacy", href: "/privacy/wake" },
+    { label: "Clear Horizon — app privacy", href: "/privacy/clear-horizon" },
+  ],
 };
 
 export default function Footer() {
@@ -23,7 +29,7 @@ export default function Footer() {
   return (
     <footer className="relative bg-ocean-950 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand column */}
           <div className="lg:col-span-2">
             <a href="/" className="inline-flex items-center mb-6">
@@ -114,9 +120,23 @@ export default function Footer() {
           <p className="font-body text-xs text-white/20">
             &copy; {new Date().getFullYear()} 1322 Customs LLC. All rights reserved.
           </p>
-          <span className="font-body text-xs text-white/20">
-            Charleston, SC
-          </span>
+          <div className="flex items-center gap-5">
+            <a
+              href="/privacy"
+              className="font-body text-xs text-white/20 hover:text-white/50 transition-colors"
+            >
+              Privacy
+            </a>
+            <a
+              href="/terms"
+              className="font-body text-xs text-white/20 hover:text-white/50 transition-colors"
+            >
+              Terms
+            </a>
+            <span className="font-body text-xs text-white/20">
+              Charleston, SC
+            </span>
+          </div>
         </div>
       </div>
     </footer>
