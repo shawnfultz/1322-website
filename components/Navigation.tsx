@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLeadModal } from "./LeadModalProvider";
 
@@ -16,6 +17,12 @@ export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const { open: openModal } = useLeadModal();
+  const pathname = usePathname();
+
+  // These anchors only exist on the homepage. From any other route a bare
+  // "#services" silently does nothing, so send those pages home first.
+  const isHome = pathname === "/";
+  const sectionHref = (hash: string) => (isHome ? hash : `/${hash}`);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -49,7 +56,7 @@ export default function Navigation() {
               {navLinks.map((link) => (
                 <a
                   key={link.href}
-                  href={link.href}
+                  href={sectionHref(link.href)}
                   className="px-4 py-2 text-sm font-body font-medium text-white/60 hover:text-white transition-colors duration-200 rounded-lg hover:bg-white/5"
                 >
                   {link.label}
@@ -112,7 +119,7 @@ export default function Navigation() {
               {navLinks.map((link, i) => (
                 <motion.a
                   key={link.href}
-                  href={link.href}
+                  href={sectionHref(link.href)}
                   onClick={() => setMobileOpen(false)}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}

@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useLeadModal } from "./LeadModalProvider";
 
 const footerLinks = {
@@ -27,6 +28,11 @@ const footerLinks = {
 
 export default function Footer() {
   const { open: openModal } = useLeadModal();
+  const pathname = usePathname();
+
+  // Same as the nav: "#about" only resolves on the homepage.
+  const isHome = pathname === "/";
+  const href = (h: string) => (h.startsWith("#") && !isHome ? `/${h}` : h);
 
   return (
     <footer className="relative bg-ocean-950 border-t border-white/5">
@@ -64,7 +70,7 @@ export default function Footer() {
                 {links.map((link) => (
                   <li key={link.label}>
                     <a
-                      href={link.href}
+                      href={href(link.href)}
                       className="font-body text-sm text-white/30 hover:text-white/60 transition-colors duration-200"
                     >
                       {link.label}
