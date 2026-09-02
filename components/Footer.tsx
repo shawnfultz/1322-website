@@ -4,15 +4,17 @@ import { useLeadModal } from "./LeadModalProvider";
 
 const footerLinks = {
   Services: [
-    { label: "Website Modernization", href: "#services" },
-    { label: "Marine & Maritime Web", href: "#services" },
-    { label: "Trade Business Websites", href: "#services" },
-    { label: "Growth & Custom Software", href: "#services" },
+    { label: "iOS & Mobile Apps", href: "/services/app-development" },
+    { label: "Web Design & Modernization", href: "/services/website-modernization" },
+    { label: "Custom Software", href: "/services/custom-software" },
+    { label: "Growth Partnership", href: "/services/growth-software" },
+    { label: "Marine & Maritime", href: "/services/marine-web" },
+    { label: "Trade Businesses", href: "/services/trade-websites" },
   ],
   Company: [
+    { label: "Our Apps", href: "#apps" },
     { label: "About", href: "#about" },
     { label: "Process", href: "#process" },
-    { label: "Why Us", href: "#about" },
     { label: "Contact", href: "#contact" },
   ],
   Legal: [
@@ -39,8 +41,8 @@ export default function Footer() {
               </span>
             </a>
             <p className="font-body text-white/30 text-sm leading-relaxed max-w-sm mb-4">
-              Modern websites for trade businesses and marine companies.
-              Based in Charleston, SC — fast turnaround, real results.
+              Native iOS apps, modern websites, and the custom software
+              underneath. Based in Charleston, SC — building for clients nationwide.
             </p>
             <button
               onClick={openModal}

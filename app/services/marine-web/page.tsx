@@ -50,7 +50,7 @@ export default function MarineWeb() {
       whyTitle="Why marine businesses trust us"
       whyPoints={[
         "We're based in Charleston, SC — one of the biggest boating communities on the East Coast. We understand the marine industry because we're part of it.",
-        "We built Blue Harbor, an AI-powered boating platform used by thousands of boaters. Marine tech is what we do.",
+        "We build marine software for ourselves, not just for clients. We publish Wake, an automatic stereo-volume app for boats, and are building Clear Horizon, a tides and boat-ownership app. Marine tech is genuinely what we do.",
         "Most web agencies don't know port from starboard. We speak your language and build sites that resonate with boaters.",
         "Seasonal business? We build sites that capture leads year-round and keep your calendar full when the water warms up.",
         "From a single charter boat to a full-service marina, we scale the solution to fit your operation and budget.",

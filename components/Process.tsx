@@ -6,30 +6,30 @@ import WaveDivider from "./WaveDivider";
 const steps = [
   {
     number: "01",
-    title: "Audit",
+    title: "Scope",
     description:
-      "We review your current site — speed, mobile experience, SEO, design. You get an honest assessment of what's working and what's not.",
+      "One call to figure out what you actually need — app, site, or the system underneath. You get an honest answer, even if it's \u201cless than you thought.\u201d",
     icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z",
   },
   {
     number: "02",
     title: "Design",
     description:
-      "We build a modern mockup you can see and touch before a single line of code. Your feedback drives every decision.",
+      "Clickable screens you can tap through before a line of production code exists. This is the cheapest possible place to change your mind.",
     icon: "M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z",
   },
   {
     number: "03",
     title: "Build",
     description:
-      "Fast, focused development. We keep you in the loop with weekly updates. No surprises, no scope creep.",
+      "Weekly builds you can open on your own phone through TestFlight, or a staging link for web. No black box, no six-month silence.",
     icon: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4",
   },
   {
     number: "04",
-    title: "Launch",
+    title: "Launch & stay on",
     description:
-      "Your new site goes live. We handle hosting, DNS, and everything technical. You just watch the leads come in.",
+      "We handle App Store review, hosting, DNS — all the technical paperwork. Then we stick around for the updates.",
     icon: "M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z",
   },
 ];
@@ -37,7 +37,8 @@ const steps = [
 export default function Process() {
   return (
     <>
-      <WaveDivider topColor="#ffffff" bottomColor="#0c1b2a" />
+      {/* No leading wave — ClientApps above is already dark, so a white
+          divider here would paint a light strip between two dark sections. */}
       <section id="process" className="relative bg-ocean-900 py-24 lg:py-32 overflow-hidden noise-overlay">
         {/* Background elements */}
         <div className="absolute inset-0 bg-gradient-to-b from-ocean-900 via-ocean-950 to-ocean-900" />
@@ -54,14 +55,15 @@ export default function Process() {
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.1}>
               <h2 className="font-display font-bold text-4xl md:text-5xl text-white leading-tight mb-6">
-                From outdated to{" "}
-                <span className="font-serif italic text-seafoam-400">outstanding</span>
+                From first call to{" "}
+                <span className="font-serif italic text-seafoam-400">shipped</span>
               </h2>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.2}>
               <p className="font-body text-lg text-white/40 leading-relaxed">
-                Most projects go from first call to live site in 2-4 weeks.
-                Here&apos;s how it works.
+                Websites go live in 2&ndash;4 weeks. Apps take longer &mdash; usually
+                8&ndash;12 weeks &mdash; because the App Store has opinions. Either way,
+                you see progress every week.
               </p>
             </AnimateOnScroll>
           </div>

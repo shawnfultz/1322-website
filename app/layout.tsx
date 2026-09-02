@@ -28,10 +28,15 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Web Design Charleston SC | Modern Websites | 1322 Customs",
+  title: "iOS App & Web Development | 1322 Customs | Charleston SC",
   description:
-    "Charleston SC web design and website modernization for small businesses. Fast turnaround, mobile-friendly, SEO built in. Serving Charleston, Summerville, Mount Pleasant & the Lowcountry.",
+    "Native iOS apps, modern websites, and custom software from one Charleston SC team. We ship our own App Store products. Serving the Lowcountry and clients nationwide.",
   keywords: [
+    "iOS app development Charleston SC",
+    "iPhone app developer Charleston",
+    "SwiftUI developer",
+    "custom software development Charleston SC",
+    "app development company South Carolina",
     "web design Charleston SC",
     "website design Charleston",
     "Charleston web developer",
@@ -50,9 +55,9 @@ export const metadata: Metadata = {
     canonical: "https://1322customs.com",
   },
   openGraph: {
-    title: "Web Design Charleston SC | 1322 Customs",
+    title: "iOS App & Web Development | 1322 Customs",
     description:
-      "Modern websites for small businesses. Fast turnaround, mobile-friendly, SEO built in. Serving the greater Charleston, SC area.",
+      "Native iOS apps, modern websites, and the custom software underneath — from one Charleston SC team.",
     url: "https://1322customs.com",
     siteName: "1322 Customs",
     locale: "en_US",
@@ -62,15 +67,15 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "1322 Customs — Web Design Charleston SC",
+        alt: "1322 Customs — iOS App & Web Development, Charleston SC",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Design Charleston SC | 1322 Customs",
+    title: "iOS App & Web Development | 1322 Customs",
     description:
-      "Modern websites for small businesses. Fast turnaround, mobile-friendly, SEO built in. Charleston, SC.",
+      "Native iOS apps, modern websites, and custom software from one Charleston SC team.",
     images: ["/og-image.png"],
   },
   robots: {

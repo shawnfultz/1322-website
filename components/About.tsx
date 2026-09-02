@@ -35,26 +35,26 @@ export default function About() {
 
             <AnimateOnScroll delay={0.1}>
               <h2 className="font-display font-bold text-4xl md:text-5xl text-ocean-900 leading-tight mb-6">
-                Your website is your
+                We build the whole
                 <br />
-                <span className="font-serif italic text-brand-indigo">first impression.</span>
+                <span className="font-serif italic text-brand-indigo">thing, in-house.</span>
               </h2>
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={0.2}>
               <p className="font-body text-lg text-ocean-700/70 leading-relaxed mb-6">
-                Most small businesses are running on websites built five or ten
-                years ago &mdash; slow, outdated, and not bringing in the work
-                they should. We fix that. Fast.
+                An app that needs a backend. A website that needs to talk to your
+                booking system. Most shops hand half of that to someone else. We
+                don&apos;t &mdash; and that is the whole point.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={0.3}>
               <p className="font-body text-lg text-ocean-700/70 leading-relaxed mb-8">
-                Based in Charleston, SC with over a decade of software experience,
-                we specialize in taking what you have and making it modern, mobile-friendly,
-                and built to convert. No six-month timelines. No bloated contracts.
-                Just a better website that works harder for your business.
+                Based in Charleston, SC with over a decade of software experience.
+                We ship our own iOS apps under this name, which means the App Store
+                process, the Swift, and the review scars are already ours &mdash; not
+                something we&apos;re learning on your budget.
               </p>
             </AnimateOnScroll>
 
@@ -80,9 +80,9 @@ export default function About() {
                 <div className="grid grid-cols-2 gap-8">
                   {[
                     { number: "10+", label: "Years Building Software", icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" },
-                    { number: "2-4", label: "Week Turnaround", icon: "M13 10V3L4 14h7v7l9-11h-7z" },
-                    { number: "100%", label: "Mobile Optimized", icon: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" },
-                    { number: "SEO", label: "Built In From Day 1", icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" },
+                    { number: "2", label: "Of Our Own iOS Apps", icon: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" },
+                    { number: "2-4", label: "Week Website Builds", icon: "M13 10V3L4 14h7v7l9-11h-7z" },
+                    { number: "You", label: "Own Everything We Build", icon: "M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" },
                   ].map((stat, i) => (
                     <div key={i} className="text-center">
                       <div className="w-12 h-12 mx-auto mb-3 rounded-2xl bg-gradient-to-br from-brand-blue/10 to-brand-violet/10 flex items-center justify-center">
@@ -110,8 +110,8 @@ export default function About() {
                     </svg>
                   </div>
                   <div>
-                    <div className="font-display font-bold text-sm">Fast Turnaround</div>
-                    <div className="font-body text-xs text-white/70">Weeks, not months</div>
+                    <div className="font-display font-bold text-sm">One Team</div>
+                    <div className="font-body text-xs text-white/70">App, web &amp; backend</div>
                   </div>
                 </div>
               </div>

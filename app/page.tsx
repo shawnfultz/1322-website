@@ -2,6 +2,8 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import AppShowcase from "@/components/AppShowcase";
+import ClientApps from "@/components/ClientApps";
 import Process from "@/components/Process";
 import WhyUs from "@/components/WhyUs";
 import ServiceAreas from "@/components/ServiceAreas";
@@ -15,6 +17,8 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <AppShowcase />
+      <ClientApps />
       <Process />
       <WhyUs />
       <ServiceAreas />

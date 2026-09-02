@@ -11,10 +11,22 @@ import { type AreaData, areas } from "@/lib/areas";
 
 const services = [
   {
-    title: "Website Modernization",
+    title: "iOS & Mobile Apps",
+    href: "/services/app-development",
+    description: "Native Swift apps built for the App Store — by a team that publishes its own.",
+    gradient: "from-seafoam-400 to-brand-blue",
+  },
+  {
+    title: "Web Design & Modernization",
     href: "/services/website-modernization",
     description: "Rebuild your outdated site with modern tech, fast load times, and a design that converts.",
-    gradient: "from-brand-blue to-seafoam-400",
+    gradient: "from-brand-blue to-brand-indigo",
+  },
+  {
+    title: "Custom Software",
+    href: "/services/custom-software",
+    description: "Booking systems, portals, dashboards, and the integrations that tie them together.",
+    gradient: "from-brand-indigo to-brand-violet",
   },
   {
     title: "Trade Business Websites",
@@ -23,15 +35,15 @@ const services = [
     gradient: "from-brand-violet to-brand-indigo",
   },
   {
-    title: "Marine & Maritime Web",
+    title: "Marine & Maritime",
     href: "/services/marine-web",
-    description: "Marinas, dealers, charters — we know the water and build sites that speak to boaters.",
-    gradient: "from-brand-indigo to-brand-blue",
+    description: "Marinas, dealers, charters — we know the water and build software for it.",
+    gradient: "from-seafoam-400 to-seafoam-500",
   },
   {
-    title: "Growth & Custom Software",
+    title: "Growth Partnership",
     href: "/services/growth-software",
-    description: "Booking systems, portals, automation, AI tools — we grow with your business.",
+    description: "We stay on after launch for updates, new features, and whatever comes next.",
     gradient: "from-seafoam-400 to-brand-violet",
   },
 ];

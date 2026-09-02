@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 export default function GrowthSoftware() {
   return (
     <ServicePage
-      badge="Growth & Custom Software"
-      title="Your website was just the"
-      titleAccent="starting line."
-      subtitle="Once your site is dialed in, we can take your business further — booking systems, customer portals, workflow automation, AI tools. We grow with you."
+      badge="Ongoing Growth Partnership"
+      title="Launch is the start,"
+      titleAccent="not the finish."
+      subtitle="Most agencies disappear the week after launch. We stay on for updates, new features, and the next thing you need built — without a new agency search every time."
       gradient="from-seafoam-400 to-brand-violet"
       features={[
         {
@@ -47,13 +47,13 @@ export default function GrowthSoftware() {
           icon: "M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z",
         },
       ]}
-      whyTitle="Why grow with us"
+      whyTitle="Why keep us around"
       whyPoints={[
-        "We already know your business. If we built your site, we know your customers, your workflow, and where the bottlenecks are.",
-        "Over 10 years of building enterprise software — from fintech to healthcare to marine. We've seen it all.",
-        "AI-powered development means we deliver custom software at a fraction of the typical cost and timeline.",
-        "No outsourcing, no handoffs. The same team that built your site builds your custom tools.",
-        "Start small. A booking widget, an automated email sequence, a simple portal. Then scale up as you see results.",
+        "We already know your business. If we built your site or your app, we know your customers, your workflow, and where the bottlenecks are.",
+        "Software rots if nobody tends it. Dependencies age, iOS ships a new version every September, and Google changes what it rewards. A retainer means someone is watching.",
+        "No outsourcing, no handoffs. The same people who built the thing are the ones maintaining it.",
+        "Start small and add as you see results — a booking widget, an automated follow-up, a portal — rather than committing to a platform up front.",
+        "No lock-in. Retainers are month to month, you own the code, and leaving means telling us you are leaving.",
       ]}
       ctaText="Let's Talk Growth"
     />

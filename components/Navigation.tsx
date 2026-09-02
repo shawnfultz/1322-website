@@ -5,9 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useLeadModal } from "./LeadModalProvider";
 
 const navLinks = [
-  { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
+  { href: "#apps", label: "Apps" },
   { href: "#process", label: "Process" },
+  { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ];
 

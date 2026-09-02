@@ -26,17 +26,17 @@ export default function Contact() {
 
           <AnimateOnScroll delay={0.1}>
             <h2 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
-              Your competitors already
+              Tell us what you&apos;re trying to build.
               <br />
-              <span className="font-serif italic text-seafoam-400">updated their site.</span>
+              <span className="font-serif italic text-seafoam-400">We&apos;ll tell you straight.</span>
             </h2>
           </AnimateOnScroll>
 
           <AnimateOnScroll delay={0.2}>
             <p className="font-body text-lg md:text-xl text-white/40 leading-relaxed max-w-2xl mx-auto mb-10">
-              We deliver modern, high-performing websites at a price that will surprise
-              you &mdash; because our team leverages AI-powered development and a decade
-              of experience to move faster than anyone else.
+              Whether it&apos;s an app, a site, or you&apos;re not sure which &mdash; one
+              conversation and you&apos;ll know what it takes and roughly what it costs.
+              No pitch deck, no pressure.
             </p>
           </AnimateOnScroll>
 
@@ -71,8 +71,8 @@ export default function Contact() {
             <div className="grid grid-cols-3 gap-8 max-w-lg mx-auto">
               {[
                 { label: "Free quote", icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" },
-                { label: "No contracts", icon: "M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" },
-                { label: "Fast turnaround", icon: "M13 10V3L4 14h7v7l9-11h-7z" },
+                { label: "You own the code", icon: "M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" },
+                { label: "Weekly builds", icon: "M13 10V3L4 14h7v7l9-11h-7z" },
               ].map((item, i) => (
                 <div key={i} className="flex flex-col items-center gap-2">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">

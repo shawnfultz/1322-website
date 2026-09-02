@@ -54,6 +54,7 @@ export default function TradeWebsites() {
         "Your customers are comparing 3-4 companies before they call. A professional site with reviews and clear pricing wins the job.",
         "We've worked with contractors, service companies, and hands-on businesses. We know what converts in your industry.",
         "2-4 weeks from kickoff to launch. You'll have a modern, lead-generating site before your next busy season hits.",
+        "If your crew needs more than a website — dispatch, job photos, signatures captured with no signal in an attic — we build native iOS apps too.",
       ]}
     />
   );

@@ -4,7 +4,7 @@ export default function StructuredData() {
     "@type": "ProfessionalService",
     name: "1322 Customs LLC",
     description:
-      "Modern website design and development for trade businesses and marine companies. Fast turnaround, SEO built in.",
+      "Native iOS app development, modern website design, and custom software from one Charleston SC team. Publisher of the Wake and Clear Horizon iPhone apps.",
     url: "https://1322customs.com",
     logo: "https://1322customs.com/logo.svg",
     image: "https://1322customs.com/hero-charleston.jpg",
@@ -36,13 +36,16 @@ export default function StructuredData() {
       { "@type": "City", name: "Folly Beach" },
     ],
     serviceType: [
+      "iOS App Development",
+      "Mobile App Development",
       "Website Design",
       "Website Development",
       "Website Modernization",
+      "Custom Software Development",
+      "API Integration",
       "SEO",
       "Marine Industry Websites",
       "Trade Business Websites",
-      "Custom Software Development",
     ],
     priceRange: "$$",
     openingHoursSpecification: {

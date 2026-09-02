@@ -17,10 +17,12 @@ const areas = [
 ];
 
 const services = [
+  "app-development",
   "website-modernization",
+  "custom-software",
+  "growth-software",
   "marine-web",
   "trade-websites",
-  "growth-software",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

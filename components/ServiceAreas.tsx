@@ -41,8 +41,8 @@ export default function ServiceAreas() {
           </AnimateOnScroll>
           <AnimateOnScroll delay={0.2}>
             <p className="font-body text-ocean-700/50 max-w-xl mx-auto">
-              Local team. Local knowledge. We build websites for businesses across
-              the Lowcountry — and nationwide.
+              Local team. Local knowledge. We build apps, websites, and custom
+              software for businesses across the Lowcountry — and nationwide.
             </p>
           </AnimateOnScroll>
         </div>

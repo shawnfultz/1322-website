@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function WebsiteModernization() {
   return (
     <ServicePage
-      badge="Website Modernization"
+      badge="Web Design & Modernization"
       title="Stop losing customers to a"
       titleAccent="slow, outdated site."
       subtitle="We rebuild your website from the ground up with modern technology, blazing speed, and a design that actually converts visitors into paying customers."
@@ -54,6 +54,7 @@ export default function WebsiteModernization() {
         "First impressions happen in 0.05 seconds. If your site looks like it was built in 2015, visitors assume your business is behind the times too.",
         "A modern site pays for itself. Better conversion rates, more leads, and a professional image that builds trust before you ever pick up the phone.",
         "We deliver in 2-4 weeks, not 6 months. You'll be live with a new site before most agencies finish their discovery phase.",
+        "And when the website is not the whole answer, we build the rest — a native iOS app, a customer portal, or the software that connects them. Same team, no handoff.",
       ]}
     />
   );
