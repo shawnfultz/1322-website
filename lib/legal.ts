@@ -10,11 +10,9 @@
  * `appPolicies` — the route, sitemap, and index page pick it up automatically.
  */
 
-export type LegalBlock =
-  | { type: "p"; text: string }
-  | { type: "h2"; text: string }
-  | { type: "ul"; items: string[] }
-  | { type: "note"; text: string };
+import type { ProseBlock } from "./prose";
+
+export type LegalBlock = ProseBlock;
 
 export interface LegalDoc {
   slug: string;
@@ -438,7 +436,7 @@ const wake: AppPolicy = {
     {
       type: "p",
       text:
-        "**You buy something.** If Wake offers a paid unlock, the purchase is handled entirely by Apple through the App Store. We never see your payment details, your card, or your Apple Account. We receive only Apple's confirmation that a purchase for this app is valid.",
+        "**You subscribe.** Wake is free for 14 days and then runs on a yearly subscription. The transaction is handled entirely by Apple through the App Store. We never see your payment details, your card, or your Apple Account. We receive only Apple's confirmation that a subscription for this app is valid, and that confirmation is not tied to a name or an email address.",
     },
 
     { type: "h2", text: "Analytics and tracking" },

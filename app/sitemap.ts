@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { appPolicies } from "@/lib/legal";
+import { supportDocs } from "@/lib/support";
 
 const areas = [
   "charleston",
@@ -59,6 +60,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${base}/terms`,
       lastModified: new Date(),
       changeFrequency: "yearly" as const,
+      priority: 0.3,
+    },
+    // App Store listings link at these, so they must stay indexable.
+    ...supportDocs.map((d) => ({
+      url: `${base}/support/${d.slug}`,
+      lastModified: new Date(d.updatedISO),
+      changeFrequency: "monthly" as const,
+      priority: 0.4,
+    })),
+    {
+      url: `${base}/support`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
       priority: 0.3,
     },
   ];

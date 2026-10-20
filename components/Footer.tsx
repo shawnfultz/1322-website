@@ -19,6 +19,7 @@ const footerLinks = {
     { label: "Contact", href: "#contact" },
   ],
   Legal: [
+    { label: "App Support", href: "/support" },
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Service", href: "/terms" },
     { label: "Wake — app privacy", href: "/privacy/wake" },
